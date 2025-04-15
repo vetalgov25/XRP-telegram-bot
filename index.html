@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Крипто Игра</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XRP App Game</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>🪙 Крипто Игра</h1>
-    <p>Ваш XRP баланс: <span id="balance">0</span></p>
-    <button id="mineBtn">Майнить XRP</button>
-    <button id="convertBtn">Конвертировать в TON</button>
+    <h1>🚀 XRP Miner</h1>
+    <p>💰 Баланс: <span id="balance">0</span> TON</p>
+    <p>⚡ Потужність: <span id="power">1</span></p>
+    <button onclick="mine()">🔨 Майнити</button>
+    <button onclick="upgrade()">⬆️ Прокачати</button>
+    <hr />
+    <p>👥 Рефералів: <span id="referrals">0</span></p>
+    <button onclick="addReferral()">+1 Реферал (для тесту)</button>
+    <p class="link">Реферальне посилання: https://t.me/YourBot?start=123456</p>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
